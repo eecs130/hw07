@@ -12,8 +12,8 @@ for (let i = 1; i < 11; i++) {
     const email = faker.internet.email().toLowerCase();
     users.push({
         id: i,
-        username: email,
-        email: email.split('@')[0],
+        username: email.split('@')[0],
+        email: email,
         firstname: casual.first_name,
         lastname: casual.last_name,
         password: casual.password
