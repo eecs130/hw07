@@ -32,7 +32,6 @@ const getRandomInt = (max) => {
 
 let i = 1;
 for (photo of photos) {
-    console.log(faker.internet.userName())
     const post_date = faker.date.between('1/1/2018', '5/30/2019', format='YYYY-MM-DD');
     const author = users[getRandomInt(users.length - 1)];
     db.photos.push({
