@@ -9,10 +9,11 @@ const imagesURL = 'https://raw.githubusercontent.com/eecs130/spring2019/master/c
 const photos = ["poppies.jpg", "dogwoods.jpg", "blossom.jpg", "field3.jpg", "field4.jpg", "branch.jpg", "red.jpg", "purple2.jpg", "field1.jpg", "purple.jpg", "jar.jpg", "green.jpg", "green1.jpg", "purple1.jpg", "magnolias.jpg", "daisy1.jpg"]
 const users = []
 for (let i = 1; i < 11; i++) {
+    const email = faker.internet.email().toLowerCase();
     users.push({
         id: i,
-        username: faker.internet.userName(),
-        email: faker.internet.email(),
+        username: email,
+        email: email.split('@')[0],
         firstname: casual.first_name,
         lastname: casual.last_name,
         password: casual.password
