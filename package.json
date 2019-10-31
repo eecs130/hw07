@@ -24,7 +24,7 @@
     "express-urlrewrite": "^1.2.0",
     "faker": "^4.1.0",
     "json-parse-helpfulerror": "^1.0.3",
-    "lodash": "^4.11.2",
+    "lodash": "^4.17.13",
     "lodash-id": "^0.14.0",
     "lowdb": "^0.15.0",
     "method-override": "^2.3.10",
